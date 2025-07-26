@@ -6,6 +6,7 @@ import ErrorBoundary from "components/ErrorBoundary";
 import BlogPostsListingDashboard from "pages/blog-posts-listing-dashboard";
 import BlogPostCreationForm from "pages/blog-post-creation-form";
 import BlogPostDetailView from "pages/blog-post-detail-view";
+import BlogCraftHomepage from "pages/blog-craft-homepage";
 import NotFound from "pages/NotFound";
 
 const Routes = () => {
@@ -15,7 +16,8 @@ const Routes = () => {
       <ScrollToTop />
       <RouterRoutes>
         {/* Define your routes here */}
-        <Route path="/" element={<BlogPostsListingDashboard />} />
+        <Route path="/" element={<BlogCraftHomepage />} />
+        <Route path="/blog-craft-homepage" element={<BlogCraftHomepage />} />
         <Route path="/blog-posts-listing-dashboard" element={<BlogPostsListingDashboard />} />
         <Route path="/blog-post-creation-form" element={<BlogPostCreationForm />} />
         <Route path="/blog-post-detail-view" element={<BlogPostDetailView />} />

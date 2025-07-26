@@ -9,6 +9,11 @@ const Header = () => {
 
   const navigationItems = [
     {
+      label: 'Home',
+      path: '/blog-craft-homepage',
+      icon: 'Home'
+    },
+    {
       label: 'Dashboard',
       path: '/blog-posts-listing-dashboard',
       icon: 'LayoutDashboard'
@@ -26,7 +31,7 @@ const Header = () => {
   ];
 
   const isActivePath = (path) => {
-    return location.pathname === path;
+    return location.pathname === path || (path === '/blog-craft-homepage' && location.pathname === '/');
   };
 
   const toggleMobileMenu = () => {
@@ -38,7 +43,7 @@ const Header = () => {
       <div className="flex items-center justify-between h-16 px-6">
         {/* Logo */}
         <Link 
-          to="/blog-posts-listing-dashboard" 
+          to="/blog-craft-homepage" 
           className="flex items-center space-x-2 transition-editorial hover:opacity-80"
         >
           <div className="flex items-center justify-center w-8 h-8 bg-primary rounded-lg">
