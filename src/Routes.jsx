@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter, Routes as RouterRoutes, Route } from "react-router-dom";
-import ScrollToTop from "components/ScrollToTop";
-import ErrorBoundary from "components/ErrorBoundary";
+import ScrollToTop from "./components/ScrollToTop";
+import ErrorBoundary from "./components/ErrorBoundary";
 // Add your imports here
-import BlogPostsListingDashboard from "pages/blog-posts-listing-dashboard";
-import BlogPostCreationForm from "pages/blog-post-creation-form";
-import BlogPostDetailView from "pages/blog-post-detail-view";
-import BlogCraftHomepage from "pages/blog-craft-homepage";
-import NotFound from "pages/NotFound";
+import BlogPostsListingDashboard from "./pages/blog-posts-listing-dashboard";
+import BlogPostCreationForm from "./pages/blog-post-creation-form";
+import BlogPostDetailView from "./pages/blog-post-detail-view";
+import BlogCraftHomepage from "./pages/blog-craft-homepage";
+import NotFound from "./pages/NotFound";
 
 const Routes = () => {
   return (
